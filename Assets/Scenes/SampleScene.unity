@@ -129,8 +129,8 @@ GameObject:
   m_Component:
   - component: {fileID: 155743609}
   - component: {fileID: 155743608}
-  - component: {fileID: 155743610}
   - component: {fileID: 155743611}
+  - component: {fileID: 155743612}
   m_Layer: 0
   m_Name: kasterull-animation-place-holder_0
   m_TagString: Untagged
@@ -213,22 +213,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!111 &155743610
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 155743607}
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Animation: {fileID: 7400000, guid: ef970de8eb58c7092a71f14d0a94f26d, type: 2}
-  m_Animations: []
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_UpdateMode: 0
-  m_CullingType: 0
 --- !u!114 &155743611
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -242,7 +226,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::potStiring
   potAnimator: {fileID: 1447497587}
-  animationTriggerName: PlayAnimation
+  animationTriggerName: Attack
+--- !u!111 &155743612
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 155743607}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Animation: {fileID: 7400000, guid: dbded59a2b8b90f4ca78fe9bab265775, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: dbded59a2b8b90f4ca78fe9bab265775, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_UpdateMode: 0
+  m_CullingType: 0
 --- !u!1 &373766956
 GameObject:
   m_ObjectHideFlags: 0

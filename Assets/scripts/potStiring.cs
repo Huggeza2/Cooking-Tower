@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class potStiring : MonoBehaviour
 {
@@ -9,24 +10,20 @@ public class potStiring : MonoBehaviour
     // The name of the Trigger parameter you created in your Animator controller
     [SerializeField] private string animationTriggerName = "PlayAnimation"; 
  
-    // Update is called once per frame
-    void Update()
+    public void OnInteract(InputAction.CallbackContext context)
     {
-        // Example: Triggers the animation when the player presses the "E" key
-        if (Input.GetKeyDown(KeyCode.E))
+        // Only trigger the animation when the button is first pressed down
+        if (context.started)
         {
             TriggerPotAnimation();
-        } 
+        }
     }
+
     private void TriggerPotAnimation()
     {
         if (potAnimator != null)
         {
             potAnimator.SetTrigger(animationTriggerName);
-        }
-        else
-        {
-            Debug.LogWarning($"Animator is missing on {gameObject.name}!");
         }
     } 
 }
