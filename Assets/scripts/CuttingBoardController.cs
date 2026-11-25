@@ -19,7 +19,6 @@ public class CuttingBoardController : MonoBehaviour
 
     private int currentChops = 0;
     private bool isCuttingComplete = false;
-
     private bool previousButtonState = false;
 
     void Update()
@@ -36,7 +35,7 @@ public class CuttingBoardController : MonoBehaviour
             keyboardPressed = Keyboard.current.spaceKey.isPressed;
         }
 
-        // Gamepad button
+        // Arcade button
         if (useArcadeButton && Gamepad.current != null)
         {
             switch (arcadeButtonNumber)
@@ -70,7 +69,7 @@ public class CuttingBoardController : MonoBehaviour
 
         bool buttonPressed = keyboardPressed || arcadePressed;
 
-        // Count only a new press, not a held button
+        // Count only a new press
         if (buttonPressed && !previousButtonState)
         {
             RegisterChop();
@@ -85,10 +84,10 @@ public class CuttingBoardController : MonoBehaviour
 
         Debug.Log("Chops: " + currentChops + "/" + requiredChops);
 
-        // Play cutting animation
         if (cuttingBoardAnimator != null)
         {
-            cuttingBoardAnimator.SetBool("IsCutting", true);
+            // Restart the cutting animation for every chop
+            cuttingBoardAnimator.Play("CuttingBoardCutting", 0, 0f);
         }
 
         if (currentChops >= requiredChops)
@@ -103,7 +102,7 @@ public class CuttingBoardController : MonoBehaviour
 
         if (cuttingBoardAnimator != null)
         {
-            cuttingBoardAnimator.SetBool("IsCutting", false);
+            cuttingBoardAnimator.Play("CuttingBoardIDLE");
         }
 
         Debug.Log("CUTTING COMPLETE! Vegetables are ready!");
@@ -117,7 +116,7 @@ public class CuttingBoardController : MonoBehaviour
 
         if (cuttingBoardAnimator != null)
         {
-            cuttingBoardAnimator.SetBool("IsCutting", false);
+            cuttingBoardAnimator.Play("CuttingBoardIDLE");
         }
 
         Debug.Log("Cutting reset!");
