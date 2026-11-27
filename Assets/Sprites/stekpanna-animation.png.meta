@@ -128,7 +128,7 @@ TextureImporter:
         width: 44
         height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -142,50 +142,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: stekpanna-animation_1
-      rect:
-        serializedVersion: 2
-        x: 55
-        y: 121
-        width: 8
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ea2cc3ed7497a1780800000000000000
-      internalID: -8711517179616640338
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: stekpanna-animation_2
-      rect:
-        serializedVersion: 2
-        x: 57
-        y: 114
-        width: 7
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f9cd4eb82bf72a580800000000000000
-      internalID: -8817344715610071905
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: stekpanna-animation_3
       rect:
         serializedVersion: 2
@@ -194,7 +150,7 @@ TextureImporter:
         width: 42
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -208,28 +164,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: stekpanna-animation_4
-      rect:
-        serializedVersion: 2
-        x: 121
-        y: 101
-        width: 19
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 819336819bd317aa0800000000000000
-      internalID: -6165078549706098408
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: stekpanna-animation_5
       rect:
         serializedVersion: 2
@@ -238,7 +172,7 @@ TextureImporter:
         width: 44
         height: 68
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -260,7 +194,7 @@ TextureImporter:
         width: 23
         height: 17
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -277,7 +211,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 292c9f242ce31a849aa3183cd093581b
     internalID: 0
     vertices: []
     indices: 
